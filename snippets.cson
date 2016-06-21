@@ -11,6 +11,14 @@
 # https://github.com/bevry/cson#what-is-cson
 
 '.source.js':
-  'console.log':
-    'prefix': 'loggy'
-    'body': 'console.log(\'$1 :\', $2);$3'
+    'Loggy':
+        'prefix': 'loggy'
+        'body': """console.log('$1: ', $1);"""
+
+'console.time':
+    'prefix': 'timer'
+    'body': 
+        """
+        console.time('${1:function}');
+        console.timeEnd('${1:function}');$2
+        """
