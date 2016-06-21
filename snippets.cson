@@ -12,13 +12,13 @@
 
 '.source.js':
     'Loggy':
-        'prefix': 'loggy'
-        'body': """console.log('$1: ', $1);"""
+        prefix: 'loggy'
+        body: """console.log('$1: ', $1);"""
 
-'console.time':
-    'prefix': 'timer'
-    'body': 
-        """
-        console.time('${1:function}');
-        console.timeEnd('${1:function}');$2
-        """
+    'Timer':
+        prefix: 'timer'
+        body:
+            """
+            console.time('${1:function}');
+            console.timeEnd('${1:function}');$2
+            """
