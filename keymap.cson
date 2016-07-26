@@ -7,6 +7,8 @@
   'ctrl-tab': 'pane:show-next-item'
   'ctrl-shift-tab ^ctrl': 'unset!'
   'ctrl-shift-tab': 'pane:show-previous-item'
+  'alt-cmd-w': 'unset!'
+  'alt-cmd-w': 'tabs:close-other-tabs'
 
 # Expand Region Package, https://atom.io/packages/expand-region
 'atom-text-editor':
