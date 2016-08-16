@@ -1,8 +1,7 @@
-# https://atom.io/docs/latest/using-atom-basic-customization#customizing-key-bindings
-# https://atom.io/docs/latest/behind-atom-keymaps-in-depth
+# http://flight-manual.atom.io/behind-atom/sections/keymaps-in-depth/
 
-# Tab Switching, https://github.com/atom/atom/pull/10737#issuecomment-210076317
 'body':
+  # Tab Switching, https://github.com/atom/atom/pull/10737#issuecomment-210076317
   'ctrl-tab ^ctrl': 'unset!'
   'ctrl-tab': 'pane:show-next-item'
   'ctrl-shift-tab ^ctrl': 'unset!'
@@ -10,7 +9,8 @@
   'alt-cmd-w': 'unset!'
   'alt-cmd-w': 'tabs:close-other-tabs'
 
-# Expand Region Package, https://atom.io/packages/expand-region
 'atom-text-editor':
+  'cmd--': 'editor:toggle-line-comments'
+  # Expand Region Package, https://atom.io/packages/expand-region
   'alt-up': 'expand-region:expand'
   'alt-down': 'expand-region:shrink'
